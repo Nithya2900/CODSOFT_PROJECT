@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ABOUT</title>
+<style>
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+  animation: fadeInLeft 1.5s ease-out;
+}
+.left {
+  left: 0;
+  background-color:black;
+}
+.right {
+  right: 0;
+  background-color:aqua;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.centered img {
+  width: 500px;
+  height:450px
+  border-radius: 50%;
+}
+button {
+  color: black;
+  padding: 10px 25px;
+  background: transparent;
+  border: 1px solid #000;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+</style>
+</head>
+<body>
+<div class="split left">
+  <div class="centered">
+   <img src="https://i.pinimg.com/736x/e9/28/66/e92866e26218e0ee9cf42caed83e14ce.jpg">
+    <h2>Jane Flex</h2>
+    <p>Some text.</p>
+  </div>
+</div>
+
+<div class="split right">
+  <div class="centered">
+    <h1>Hi!Everyone......</h1>
+    <p><font size=4><em>My name is Nithya Sri and I am thrilled to be here as a first-year student in the exciting field of Artificial Intelligence and Data Science. The prospect of diving into the world of cutting-edge technologies and data-driven insights truly fascinates me.I come from a background where my curiosity for technology and its limitless possibilities has been a driving force in my academic journey.Beyond academics, I am excited to be part of a community where collaboration, innovation, and lifelong learning are not just encouraged but celebrated. I am looking forward to getting involved in various extracurricular activities, such as AI and data science clubs, hackathons, and research projects, to broaden my knowledge and contribute to the ever-evolving landscape of technology.I believe that with determination, hard work, and a passion for problem-solving, I can make a positive impact in the world through the application of artificial intelligence and data science.</font></em></p>
+<h2>Click to view my projects</h2>
+<button type="button" onclick="takeATour()"><font size=4>My Projects</font></button>
+  <script>
+    function takeATour() {
+      window.location.href = 'project.html';
+    }
+  </script>
+</div>
+</div>
+</body>
+</html>

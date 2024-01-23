@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PROJECTS</title>
+<style>
+body {
+  background-image: linear-gradient(to right, #050608, #182539, #21416b, #2d5fa2, #3f7edc);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+h2 {
+  color: white;
+  font-size:50px;
+}
+
+.project {
+  color: white;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  padding: 20px;
+  border: 2px solid white;
+  animation: fadeIn 1.5s ease-out forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+button {
+  color: white;
+  padding: 10px 25px;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+</style>
+</head>
+<body>
+  <h2>Project</h2>
+  <div class="project">
+  <h3><b>Make-A-Thon (Creating Website)</b></h3>
+    <p style="font-size:25px;"><em>A website was created for a project. It was based on mental health. A team of three members created this website. I was playing one of the major roles in creating this website.</em></p>
+<h3><b>Exhibition</b></h3>
+<p style="font-size:25px;"><em>Created more than 15 games for my school exhibition using scratch</em></p>
+</div>
+<h4><font color=white><b>Click here for my skills</b></font></h4>
+<button type="button" onclick="takeATour()"><font size=4>My Skills</font></button>
+  <script>
+    function takeATour() {
+      window.location.href = 'skills.html';
+    }
+  </script>
+</body>
+</html>

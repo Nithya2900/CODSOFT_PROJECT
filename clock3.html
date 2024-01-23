@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <title>clock display</title>
+    <style>
+        body {
+            background: url("https://www.performanceinsightllc.com/wp-content/uploads/2017/01/magic-1024x600.jpg");
+            background-repeat: no-repeat;
+            background-size:cover;
+            margin: 0;
+        }
+
+        section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 70vh;
+            margin: 0;
+        }
+
+        #time {
+            font-family: digital-clock-font, sans-serif;
+            font-size: 5em;
+            color:#FFFFFF;
+        }
+
+        h1 {
+            font-size: 50px;
+            color:#FFFFFF;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <h1>DIGITAL CLOCK INDIAN STANDARD TIME-IST</h1>
+    <section>
+        <div id="time"></div>
+    </section>
+    <script>
+        function updateClock() {
+            const d = new Date();
+            const hours = d.getHours();
+            const minutes = d.getMinutes();
+            const seconds = d.getSeconds();
+            const timeString = `${hours}:${minutes}:${seconds}`;
+            document.querySelector('#time').textContent = timeString;
+        }
+
+        setInterval(updateClock, 1000);
+        updateClock();
+    </script>
+</body>
+</html>
